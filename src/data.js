@@ -2,8 +2,8 @@
 export const BUSINESS = {
   name: "Top Choice Concrete",
   shortName: "TC",
-  phone: "(919) 555-0100",
-  email: "info@topchoiceconcrete.com",
+  phone: "(919) 574-5043",
+  email: "topchoiceconcrete92@gmail.com",
   tagline: "Quality Residential Concrete — Benson, NC",
 };
 
