@@ -1,0 +1,70 @@
+:root {
+  --gold:        #C8981E;
+  --gold-light:  #E8C44A;
+  --gold-pale:   #FBF3D5;
+  --gray-logo:   #B0B0B0;
+  --gray-dark:   #4A4A4A;
+  --gray-medium: #777777;
+  --gray-light:  #AAAAAA;
+  --gray-border: #E0DCD0;
+  --cream:       #F7F5F0;
+  --white:       #FFFFFF;
+  --green:       #2E7D32;
+  --green-pale:  #E8F5E9;
+  --red:         #C62828;
+  --red-pale:    #FFEBEE;
+  --amber:       #F9A825;
+  --blue-info:   #5B9BD5;
+
+  --font-sans:  'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background: var(--cream);
+  color: var(--gray-dark);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px) translateX(-50%); }
+  to   { opacity: 1; transform: translateY(0) translateX(-50%); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(8px) translateX(-50%); }
+  to   { opacity: 1; transform: translateY(0) translateX(-50%); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleCheck {
+  0%   { transform: scale(0); opacity: 0; }
+  60%  { transform: scale(1.15); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.6; }
+}
+
+/* Focus rings */
+input:focus, textarea:focus, select:focus {
+  border-color: var(--gold) !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(200, 152, 30, 0.15);
+}
+
+/* Scrollbar — light theme */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--gray-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gray-light); }
